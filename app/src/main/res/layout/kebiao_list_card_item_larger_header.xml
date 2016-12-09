@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_list_card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:stackHeaderHeight="300dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frame_list_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_rectangle_with_radius">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/kebiao_listcard_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:text="12-8-8"
+                android:gravity="left|center"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/kebiao_listcard_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|top"
+                android:layout_marginRight="50dp"
+                android:layout_weight="3"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="12"/>
+            <TextView
+                android:id="@+id/kebiao_listcard_zhushi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:gravity="center|bottom"
+                android:layout_weight="4"
+                android:text="注：该课表为本周所需要打卡的课程"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/container_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="wuhead"
+            />
+    </ScrollView>
+
+</LinearLayout>

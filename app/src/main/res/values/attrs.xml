@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView">
+        <attr name="loading_renderer">
+            <enum name="SwapLoadingRenderer" value="0"/>
+            <enum name="CircleBroodLoadingRenderer" value="1"/>
+            <enum name="DayNightLoadingRenderer" value="2"/>
+            <enum name="GearLoadingRenderer" value="3"/>
+            <enum name="CollisionLoadingRenderer" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>
